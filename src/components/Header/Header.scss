@@ -1,4 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.header__logo {
+    height: 7rem;
+    width: 7rem;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__item {
+    padding: 1rem;
+}
+
+.header__link {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
 .header__link--active {
-    font-size: 1.6rem;
     color: red;
 }
