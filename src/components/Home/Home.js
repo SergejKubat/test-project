@@ -1,9 +1,14 @@
 import './Home.scss';
 import { Fragment } from 'react';
 import Media from 'react-media';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import picture from '../../assets/img/10364.jpg';
+
+import picture1 from '../../assets/img/10364.jpg';
+import picture2 from '../../assets/img/25060.jpg';
+import picture3 from '../../assets/img/31214.jpg';
+import picture4 from '../../assets/img/195548-OY9OIN-908.jpg';
+import picture5 from '../../assets/img/OGN39D0.jpg';
 
 function Home() {
     return (
@@ -15,21 +20,21 @@ function Home() {
             }}>
             {matches => (
                 <Fragment>
-                    {matches.small && <p>Home - small</p>}
-                    {matches.medium && <p>Home - medium</p>}
-                    {matches.large && <p>Home - large</p>}
-                    <Carousel>
+                    <Carousel infiniteLoop useKeyboardArrows autoPlay>
                         <div>
-                            <img src={picture} />
-                            <p className="legend">Legend 1</p>
+                            <img src={picture1} alt="Carousel - 1" />
                         </div>
                         <div>
-                            <img src="assets/2.jpeg" />
-                            <p className="legend">Legend 2</p>
+                            <img src={picture2} alt="Carousel - 2" />
                         </div>
                         <div>
-                            <img src="assets/3.jpeg" />
-                            <p className="legend">Legend 3</p>
+                            <img src={picture3} alt="Carousel - 3" />
+                        </div>
+                        <div>
+                            <img src={picture4} alt="Carousel - 4" />
+                        </div>
+                        <div>
+                            <img src={picture5} alt="Carousel - 5" />
                         </div>
                     </Carousel>
                 </Fragment>

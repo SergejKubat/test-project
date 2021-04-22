@@ -2,7 +2,9 @@ import './Footer.scss';
 
 function Footer() {
     return (
-        <div>Footer</div>
+        <footer className="footer">
+            <p className="copyright">Copyright 2021 - Sergej Kubat - All Rights Reserved.</p>
+        </footer>
     );
 }
 
