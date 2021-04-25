@@ -1,0 +1,90 @@
+.main {
+    margin-top: 7rem;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.box-col {
+    flex: 1 50%;
+    display: flex;
+    padding: 1.5rem;
+}
+
+.box-col-health-left,
+.box-col-investment-left {
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+.box-col-health-right {
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.box-img {
+    width: 50rem;
+    height: 50rem;
+}
+
+.box-container {
+    width: 65%;
+}
+
+.box-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #2f3138;
+}
+
+.box-paragraph {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #a5abb1;
+}
+
+.box-list {
+    list-style-type: none;
+}
+
+.box-list-item {
+    padding: .5rem 0;
+    font-size: 1.4rem;
+    color: #a5abb1;
+}
+
+.box-btn {
+    margin-top: 2rem;
+    padding: 1.2rem 2rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    background-color: #3054d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 .5rem .5rem rgba(48, 84, 212, .2);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.box-btn:hover {
+    background-color: darken(#3054d4, 10%);
+    box-shadow: 0 .5rem .7rem rgba(48, 84, 212, .4);
+}
+
+.error-toast {
+    font-size: 1.5rem;
+    background-color: #dc3545;
+}
+
+.check {
+    font-size: 1.4rem;
+    color: #a8ddc8;
+}
