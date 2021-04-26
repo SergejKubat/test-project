@@ -88,3 +88,10 @@
     font-size: 1.4rem;
     color: #a8ddc8;
 }
+
+@media (max-width: 699px) {
+    .box-img {
+        width: 35rem;
+        height: 35rem;
+    }
+}

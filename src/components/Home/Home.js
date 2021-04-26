@@ -24,7 +24,6 @@ function Home() {
         toast.error("No link found!", {
             className: "error-toast",
             draggable: false,
-            transition: Zoom,
             autoClose: 5000,
             position: toast.POSITION.BOTTOM_CENTER
         });
