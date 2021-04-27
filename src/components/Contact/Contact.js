@@ -17,7 +17,7 @@ function Contact() {
             {matches => (
                 <Fragment>
                     <main className="main">
-                        <section className="contact-container">
+                        <section className="contact-container" style={{ padding: matches.medium ? "8rem 3rem 8rem 0" : matches.small ? "5rem 1.5rem" : null, backgroundPosition: matches.small ? "center top" : null }}>
                             <div className="contact-col" style={{ flex: matches.small ? '1 100%' : null }}></div>
                             <div className="contact-col" style={{ flex: matches.small ? '1 100%' : null }}>
                                 <div className="contact-content" style={{ width: matches.medium ? '100%' : null }}>

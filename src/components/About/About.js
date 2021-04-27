@@ -21,8 +21,8 @@ function About() {
                             </div>
                         </section>
                         <section className="questions" style={{ padding: matches.medium ? "5rem 3rem" : matches.small ? "3rem 1.5rem" : null }}>
-                            <div className="questions-row" style={{ width: matches.small ? '90%' : null }}>
-                                <div className="question" style={{ padding: matches.medium ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
+                            <div className="questions-row" style={{ width: matches.small ? '100%' : null }}>
+                                <div className="question" style={{ padding: matches.medium || matches.small ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
                                     <div className="question-icon-container">
                                         <BsQuestionCircle className="question-icon" />
                                     </div>
@@ -31,7 +31,7 @@ function About() {
                                         <p className="question-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga molestias similique soluta deleniti quisquam officiis dolorem reprehenderit quas cum id, eius, numquam veniam labore praesentium sapiente.</p>
                                     </div>
                                 </div>
-                                <div className="question" style={{ padding: matches.medium ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
+                                <div className="question" style={{ padding: matches.medium || matches.small ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
                                     <div className="question-icon-container">
                                         <BsQuestionCircle className="question-icon" />
                                     </div>
@@ -42,8 +42,8 @@ function About() {
                                 </div>
                             </div>
 
-                            <div className="questions-row" style={{ width: matches.small ? '90%' : null }}>
-                                <div className="question" style={{ padding: matches.medium ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
+                            <div className="questions-row" style={{ width: matches.small ? '100%' : null }}>
+                                <div className="question" style={{ padding: matches.medium || matches.small ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
                                     <div className="question-icon-container">
                                         <BsQuestionCircle className="question-icon" />
                                     </div>
@@ -52,7 +52,7 @@ function About() {
                                         <p className="question-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem consectetur praesentium explicabo eaque voluptatum, ratione distinctio quod, quia nihil facere voluptatem quos?</p>
                                     </div>
                                 </div>
-                                <div className="question" style={{ padding: matches.medium ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
+                                <div className="question" style={{ padding: matches.medium || matches.small ? "2rem 1rem" : null, flex: matches.small ? "1 100%" : null }}>
                                     <div className="question-icon-container">
                                         <BsQuestionCircle className="question-icon" />
                                     </div>

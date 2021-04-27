@@ -25,7 +25,7 @@
 .contact-heading {
     font-size: 5rem;
     font-weight: 500;
-    line-height: 8rem;
+    line-height: 7.5rem;
     color: #2f3138;
 }
 
@@ -76,12 +76,12 @@
 
 .contact-item-link {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #3054d4;
     transition: all .5s;
 }
 
-@media (max-width: 1399px) {
+/*@media (max-width: 1399px) {
     .contact-container {
         padding: 8rem 3rem 8rem 0;
     }
@@ -92,4 +92,4 @@
         padding: 5rem 1.5rem;
         background-position: center top;
     }
-}
+}*/
