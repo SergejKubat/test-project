@@ -45,7 +45,7 @@ function Home() {
             {matches => (
                 <Fragment>
                     <main className="main">
-                        <Carousel /*infiniteLoop interval="5000" useKeyboardArrows autoPlay*/ showThumbs={ false }>
+                        <Carousel infiniteLoop interval="5000" useKeyboardArrows autoPlay showThumbs={ false }>
                             <div className={ matches.small ? "image-container-sm" : matches.medium ? "image-container-md" : "image-container" }>
                                 <img src={picture1} srcSet={`${picture1_min} 840w, ${picture1} 1680w`} alt="Credit dept" sizes="100wmin" className="image" />
                             </div>
