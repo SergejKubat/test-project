@@ -5,9 +5,10 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
+
   return (
     <div>
       <Router>

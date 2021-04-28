@@ -1,33 +1,23 @@
-$color-dark-text: #2f3138;
-$color-light-text: #a5abb1;
-$color-link: #586bcd;
-$color-btn-background: #3054d4;
-$color-check: #16f59d;
-$color-about-title-background: #f8f9fd;
-$color-background-about: #f8f9fd;
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-}
-
-a {
-  text-decoration: none;
-}
+@import "./sass/main.scss";
 
 .carousel .thumbs-wrapper {
   text-align: center;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  position:fixed; /* add this code for position fixed */
+  top:0px; /* set top and left 0 */
+  left:0px;
+}
+.slider-item-div {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.carousel-style {
+  height: 100% !important;
 }

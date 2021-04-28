@@ -35,30 +35,30 @@ function Header() {
             }}>
             {matches => (
                 <Fragment>
-                    <header className={matches.small ? "header sm-header" : "header"}>
-                        <div className="logo-nav">
-                            <div className="logo-container">
-                                <img src={logo} alt="Logo" className="logo" />
+                    <header className={matches.small ? "header header-sm" : "header"}>
+                        <div className="header-logo-nav">
+                            <div className="header-logo-container">
+                                <img src={logo} alt="Logo" className="header-logo" />
                             </div>
-                            <ul className={click ? matches.small ? "sm-nav-options active" : "nav-options active" : matches.small ? "sm-nav-options" : "nav-options"}>
-                                <li className={matches.small ? "sm-option" : "option"} onClick={closeMobileMenu}>
+                            <ul className={click ? matches.small ? "header-sm-nav-options active" : "header-nav-options active" : matches.small ? "header-sm-nav-options" : "header-nav-options"}>
+                                <li className={matches.small ? "header-sm-option" : "header-option"} onClick={closeMobileMenu}>
                                     <NavLink exact activeClassName="nav-link active" to="/" className="nav-link">Home</NavLink>
                                 </li>
-                                <li className={matches.small ? "sm-option" : "option"} onClick={closeMobileMenu}>
+                                <li className={matches.small ? "header-sm-option" : "header-option"} onClick={closeMobileMenu}>
                                     <NavLink exact activeClassName="nav-link active" to="/contact" className="nav-link">Contact</NavLink>
                                 </li>
-                                <li className={matches.small ? "sm-option" : "option"} onClick={closeMobileMenu}>                                    
+                                <li className={matches.small ? "header-sm-option" : "header-option"} onClick={closeMobileMenu}>                                    
                                     <NavLink exact activeClassName="nav-link active" to="/about" className="nav-link">About</NavLink>
                                 </li>
                                 {matches.small ? (
                                     <div>
-                                        <li className={matches.small ? "sm-option" : "option"}>
-                                            <h2 className="transl-text" style={{ marginRight: "0" }}>{t('description.text')}</h2>
+                                        <li className={matches.small ? "header-sm-option" : "header-option"}>
+                                            <h2 className="header-translation-text" style={{ marginRight: "0" }}>{t('description.text')}</h2>
                                         </li>
-                                        <li className={matches.small ? "sm-option" : "option"}>
-                                            <select name="lang" id="lang" className="transl-dropdown" onChange={ changeLanguage }>
+                                        <li className={matches.small ? "header-sm-option" : "header-option"}>
+                                            <select name="lang" value={i18n.language} id="lang" className="header-translation-dropdown" onChange={ changeLanguage }>
                                                 {Object.keys(lngs).map((lng) => (
-                                                    <option key={lng} selected={i18n.language === lng } value={lng}>
+                                                    <option key={lng} value={lng}>
                                                         {lngs[lng].nativeName}
                                                     </option>
                                                 ))}
@@ -70,12 +70,12 @@ function Header() {
                         </div>
 
                         {matches.small ? "" : (
-                            <div className="transl-container">
-                                <h2 className="transl-text">{t('description.text')}</h2>
+                            <div className="header-translation-container">
+                                <h2 className="header-translation-text">{t('description.text')}</h2>
                                 <div>
-                                    <select name="lang" id="lang" className="transl-dropdown" onChange={ changeLanguage }>
+                                    <select name="lang" value={i18n.language} id="lang" className="header-translation-dropdown" onChange={ changeLanguage }>
                                         {Object.keys(lngs).map((lng) => (
-                                            <option key={lng} selected={i18n.language === lng } value={lng}>
+                                            <option key={lng} value={lng}>
                                                 {lngs[lng].nativeName}
                                             </option>
                                         ))}
@@ -84,11 +84,11 @@ function Header() {
                             </div>
                         )}
 
-                        <div className={matches.small ? "sm-mobile-menu" : "mobile-menu"} onClick={handleClick}>
+                        <div className={matches.small ? "header-sm-mobile-menu" : "header-mobile-menu"} onClick={handleClick}>
                             {click ? (
-                                <CloseMenu className="menu-icon" />
+                                <CloseMenu className="header-menu-icon" />
                             ) : (
-                                <MenuIcon className="menu-icon" />
+                                <MenuIcon className="header-menu-icon" />
                             )}
                         </div>
                     </header>
@@ -106,13 +106,3 @@ export default function WrappedApp() {
       </Suspense>
     );
 }
-
-/* 
-
-{Object.keys(lngs).map((lng) => (
-                <button key={lng} style={{ fontWeight: i18n.language === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                    {lngs[lng].nativeName}
-                </button>
-            ))}
-
- */

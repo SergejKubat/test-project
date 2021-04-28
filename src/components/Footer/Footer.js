@@ -16,13 +16,13 @@ function Footer() {
                 <Fragment>
                     <footer className="footer">
                         <div className="footer-container">
-                            <div className={matches.small ? "sm-footer-grid" : matches.medium ? "md-footer-grid" : "footer-grid"}>
+                            <div className={matches.small ? "footer-grid footer-sm-grid" : matches.medium ? "footer-grid footer-md-grid" : "footer-grid"}>
                                 <img src={logo} alt="Logo" className="footer-logo" />
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum rerum? Reprehenderit minus aperiam cumque debitis molestias blanditiis repudiandae perferendis quis. Sint nobis itaque, ex minus laudantium doloremque sequi, ipsam dolorum necessitatibus modi numquam. Nemo, neque ut, incidunt officia nisi qui tempora eos voluptate, corrupti voluptas adipisci animi quam veniam?</p>
+                                <p className="footer-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum rerum? Reprehenderit minus aperiam cumque debitis molestias blanditiis repudiandae perferendis quis. Sint nobis itaque, ex minus laudantium doloremque sequi, ipsam dolorum necessitatibus modi numquam. Nemo, neque ut, incidunt officia nisi qui tempora eos voluptate, corrupti voluptas adipisci animi quam veniam?</p>
                             </div>
-                            <div className={matches.small ? "sm-footer-grid" : matches.medium ? "md-footer-grid" : "footer-grid"}>
-                                <h2>Explore</h2>
-                                <ul className="links-box">
+                            <div className={matches.small ? "footer-grid footer-sm-grid" : matches.medium ? "footer-grid footer-md-grid" : "footer-grid"}>
+                                <h2 className="footer-heading" style={{ marginTop: "4rem" }}>Explore</h2>
+                                <ul className="footer-links-box">
                                     <li>
                                         <NavLink to="/" className="footer-grid-links">Home</NavLink>
                                     </li>
@@ -34,9 +34,9 @@ function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className={matches.small ? "sm-footer-grid" : matches.medium ? "md-footer-grid" : "footer-grid"}>
-                                <h2>Social media</h2>
-                                <ul className="links-box">
+                            <div className={matches.small ? "footer-grid footer-sm-grid" : matches.medium ? "footer-grid footer-md-grid" : "footer-grid"}>
+                                <h2 className="footer-heading" style={{ marginTop: "3.5rem" }}>Social media</h2>
+                                <ul className="footer-links-box">
                                     <li>
                                         <a href="/" className="footer-grid-links">Facebook</a>
                                     </li>
@@ -53,7 +53,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="footer-bottom">
-                            <p className="copyright">All rights reserved by &copy;Sergej Kubat 2021</p>
+                            <p className="footer-copyright">All rights reserved by &copy;Sergej Kubat 2021</p>
                         </div>
                     </footer>
                 </Fragment> 
