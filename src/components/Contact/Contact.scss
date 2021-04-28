@@ -1,3 +1,5 @@
+@import "../../sass/abstracts/variables";
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -38,5 +40,5 @@
 
 .contact-item-icon {
     font-size: 2.6rem;
-    color: #2f3138;
+    color: $color-dark-text;
 }

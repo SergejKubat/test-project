@@ -1,4 +1,3 @@
-import './NotFound.scss';
 import { Fragment } from 'react';
 import Media from 'react-media';
 import { NavLink } from 'react-router-dom';

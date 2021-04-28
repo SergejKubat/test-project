@@ -1,10 +1,9 @@
-import './App.scss';
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-import Contact from './components/Contact/Contact';
-import About from './components/About/About';
-import Footer from './components/Footer/Footer';
-import NotFound from './components/NotFound/NotFound';
+import Header from '../Header/Header';
+import Home from '../Home/Home';
+import Contact from '../Contact/Contact';
+import About from '../About/About';
+import Footer from '../Footer/Footer';
+import NotFound from '../NotFound/NotFound';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {

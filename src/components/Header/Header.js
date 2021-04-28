@@ -1,4 +1,3 @@
-import './Header.scss';
 import logo from '../../assets/img/logo.png';
 import { Fragment, useState } from 'react';
 import Media from 'react-media';
@@ -6,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Suspense } from 'react';
 
-import { ReactComponent as MenuIcon } from '../../assets/svg/menu.svg';
-import { ReactComponent as CloseMenu } from '../../assets/svg/menu-close.svg';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md"; 
 
 const lngs = {
     en: { nativeName: 'English' },
@@ -86,9 +85,9 @@ function Header() {
 
                         <div className={matches.small ? "header-sm-mobile-menu" : "header-mobile-menu"} onClick={handleClick}>
                             {click ? (
-                                <CloseMenu className="header-menu-icon" />
+                                <MdClose className="header-menu-icon" />
                             ) : (
-                                <MenuIcon className="header-menu-icon" />
+                                <GiHamburgerMenu className="header-menu-icon" />
                             )}
                         </div>
                     </header>

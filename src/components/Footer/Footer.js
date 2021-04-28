@@ -1,4 +1,3 @@
-import './Footer.scss';
 import logo from '../../assets/img/logo.png';
 import { Fragment} from 'react';
 import Media from 'react-media';

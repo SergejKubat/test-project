@@ -1,9 +1,11 @@
+@import "../../sass/abstracts/variables";
+
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8rem 1rem 5rem 1rem;
-    background-color: #f8f9fd;
+    background-color: $color-about-title-background;
 }
 
 .title-content {
@@ -36,6 +38,6 @@
 
 .question-icon {
     font-size: 1.8rem;
-    color: #3054d4;
+    color: $color-btn-background;
     stroke-width: 2%;
 }

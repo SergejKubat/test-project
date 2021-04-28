@@ -45,7 +45,7 @@ function Home() {
             {matches => (
                 <Fragment>
                     <main className="main">
-                        <Carousel /*infiniteLoop interval="5000" useKeyboardArrows autoPlay*/>
+                        <Carousel /*infiniteLoop interval="5000" useKeyboardArrows autoPlay*/ showThumbs={ false }>
                             <div className={ matches.small ? "image-container-sm" : matches.medium ? "image-container-md" : "image-container" }>
                                 <img src={picture1} srcSet={`${picture1_min} 840w, ${picture1} 1680w`} alt="Credit dept" sizes="100wmin" className="image" />
                             </div>
@@ -63,7 +63,7 @@ function Home() {
                             </div>
                         </Carousel>
                         <section className="box" style={{ marginTop: matches.small ? "3rem" : null }}>
-                            <div className={ matches.small ? "box-col box-col-sm box-col-health-left" : "box-col box-col-health-left" }>
+                            <div className={ matches.small ? "box-col box-col-sm box-col-health-left" : "box-col box-col-health-left" } style={{ order: matches.small ? "2" : null }}>
                                 <HealthInsurance className="box-img" style={{ width: matches.medium ? "40vw" : matches.small ? "75vw" : null }} />
                             </div>
                             <div className={ matches.small ? "box-col box-col-sm box-col-health-right" : "box-col box-col-health-right" }>
@@ -88,7 +88,7 @@ function Home() {
                         </section>
 
                         <section className="box">
-                            <div className={ matches.small ? "box-col box-col-sm box-col-investment-left" : "box-col box-col-investment-left" } style={{ order: matches.small ? "2" : null }}>
+                            <div className={ matches.small ? "box-col box-col-sm box-col-investment-left" : "box-col box-col-investment-left" }>
                                 <div className="box-container" style={{ width: matches.medium || matches.small ? "100%" : null }}>
                                     <h1 className="heading heading-medium heading-light u-margin-bottom-big">Investment Plans</h1>
                                     <p className="paragraph u-margin-bottom-small">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>

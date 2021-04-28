@@ -1,3 +1,5 @@
+@import "../../sass/abstracts/variables";
+
 .main {
     margin-top: 7rem;
 }
@@ -11,7 +13,7 @@
 }
 
 .image-container-sm {
-    height: 45vh;
+    height: 40vh;
 }
 
 .image {
@@ -60,19 +62,19 @@
     padding: .5rem 0;
     font-size: 1.6rem;
     font-weight: 500;
-    color: #a5abb1;
+    color: $color-light-text;
 }
 
 .box-check {
     margin-right: .7rem;
     font-size: 2rem;
-    color: #16f59d;
+    color: $color-check;
     stroke-width: 2%;
 }
 
 .error-toast {
-    font-size: 1.5rem;
-    background-color: #dc3545;
+    font-size: 1.6rem;
+    background-color: $color-toast-error;
 }
 
 .box-col-sm {
@@ -80,3 +82,7 @@
     justify-content: center;
     padding: 3rem;
 }
+
+.carousel .thumbs-wrapper {
+    text-align: center;
+  }
